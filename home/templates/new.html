@@ -1,0 +1,33 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}
+    <title>
+        Input Form
+    </title>
+{% endblock %}
+
+{% block content %}
+    <form action = "{% url 'input_success' %}" method = 'POST'>
+    {% csrf_token %}
+        <label for="sepal_length">Sepal Length</label>
+        <input name='sepal_length' id='sepal_length' type = 'text'><br />
+
+        <label for="petal_length">Petal Length</label>
+        <input name='petal_length' id='petal_length' type = 'text'><br />
+        
+        <label for="sepal_width">Sepal Width</label>
+        <input name='sepal_width' id = 'sepal_width' type = 'text'><br />
+        
+        <label for="petal_width">Petal Width</label>
+        <input name='petal_width' id='petal_width' type = 'text'><br />
+        <input type='submit' value="Submit">
+    </form>
+
+{% endblock %}
+
+{% comment %} 
+<html>
+<body>
+<h1>hii</h1>
+</body>
+</html> {% endcomment %}

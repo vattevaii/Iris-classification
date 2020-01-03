@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+{% block title %}
+    <title>IRIS forever!!</title>
+{% endblock %}
+
+{% block content %}
+  <h1>IRIS Home</h1>
+  <p>Welcome to Iris, a website developed for <em>Prediction</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_predictions }}</li>
+  </ul>
+{% endblock %}
+
+{% comment %} <html>
+<body>
+<h1>hii</h1>
+</body>
+</html> {% endcomment %}

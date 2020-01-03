@@ -1,0 +1,27 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}
+    <title>
+        Input Form
+    </title>
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>sepal_length</th><th>sepal_width</th><th>petal_length</th><th>petal_width</th><th>Species</th>
+        </tr>
+        {% if object_list %}
+            {% for object in object_list %}
+                <tr>
+                    <td>{{ object.sepal_width }}</td>
+                    <td>{{ object.sepal_length }}</td>
+                    <td>{{ object.petal_length }}</td>
+                    <td>{{ object.petal_width }}</td>
+                    <td>{{ object.get_species_display }}</td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+        
+    </table>
+{% endblock %}
