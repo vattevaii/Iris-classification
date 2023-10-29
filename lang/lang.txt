@@ -1,0 +1,11 @@
+English en    ISO-8859-1
+Spanish es UTF-8
+French fr ISO-8859-1
+German de UTF-8
+Italian it ISO-8859-1
+Portuguese pt UTF-8
+Russian ru UTF-8
+Japanese ja UTF-8
+Korean ko UTF-8
+Chinese zh UTF-8
+Arabic ar UTF-8
